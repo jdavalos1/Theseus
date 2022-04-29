@@ -8,9 +8,12 @@ public class Player : MonoBehaviour
     private Transform player;
     [SerializeField]
     private float speed;
+
+    private Dictionary<Useable, int> useableItems;
     // Start is called before the first frame update
     void Start()
     {
+        useableItems = new Dictionary<Useable, int>();
     }
 
     // Update is called once per frame
@@ -27,5 +30,12 @@ public class Player : MonoBehaviour
         Vector3 move = new Vector3(horizontal, 0, vertical);
 
         player.transform.position += speed * Time.deltaTime * move;
+    }
+
+    public void AddItems(Useable useable)
+    {
+        if (useableItems.ContainsKey(useable)) useableItems[useable]++;
+        else useableItems.Add(useable, 1);
+        
     }
 }
