@@ -10,9 +10,4 @@ public class DialogManager : MonoBehaviour
     {
         if(SharedInstance == null) SharedInstance = this;
     }
-
-    public void ShowTextUI()
-    {
-
-    }
 }

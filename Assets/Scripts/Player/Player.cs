@@ -36,6 +36,5 @@ public class Player : MonoBehaviour
     {
         if (useableItems.ContainsKey(useable)) useableItems[useable]++;
         else useableItems.Add(useable, 1);
-        
     }
 }
