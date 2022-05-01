@@ -17,6 +17,7 @@ public class FieldItemManager : MonoBehaviour
     void Start()
     {
         if(SharedInstance == null) SharedInstance = this;
+        // Prepare the viewable items on the screen
         _useables = new Dictionary<FieldItemType, Useable>();
         TextAsset textAsset = Resources.Load<TextAsset>("Items JSON/Potion");
         Potion potion = JsonUtility.FromJson<Potion>(textAsset.text);

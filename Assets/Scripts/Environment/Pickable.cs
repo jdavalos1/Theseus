@@ -28,5 +28,8 @@ public class Pickable : FieldItems
         player.parent.GetComponent<Player>().AddItems(FieldItemManager.SharedInstance.UseableLists[pickType]);
 
         gameObject.SetActive(false);
+
+        // TODO:
+        // Need to show inventory in some form of a UI.
     }
 }
