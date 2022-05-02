@@ -9,7 +9,7 @@ using System;
 /// </summary>
 public class FieldItems : MonoBehaviour
 {
-   [SerializeField]
+    [SerializeField]
     protected Transform player;
     [SerializeField]
     private TextMeshProUGUI interactUI;

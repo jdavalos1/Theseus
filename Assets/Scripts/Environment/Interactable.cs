@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 
 /// <summary>
@@ -8,6 +9,9 @@ using UnityEngine;
 /// </summary>
 public class Interactable : FieldItems 
 {
+    [SerializeField]
+    private string ItemResourceLocation;
+
     // Update is called once per frame
     void Update()
     {
@@ -17,13 +21,11 @@ public class Interactable : FieldItems
     private void HandleInteractionItem()
     {
         // TODO
-        // If the player interacts have the dialog manager handle
-        // what happens to the item. Each interactable needs to know
-        // what file to display and should display in a single concise way.
-        // The dialog manager can handle how dialog is done
+        // Call the ui manager's show dialog functionality
         // Have to make sure the player can't move otherwise they'll move
         // while dialog is being displayed.
 
-        throw new System.NotImplementedException();
+        DialogBuilder db = new DialogBuilder("Interactables JSON/AchillesVase", 0);
+        UIManager.SharedInstance.ShowDialog(db);
     }
 }
