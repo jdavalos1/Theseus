@@ -31,9 +31,35 @@ public class UIManager : MonoBehaviour
         // chunk of text.
         // Make sure the dialog disappears after all text is read.
         // Best to put this in an coroutine
+        StartCoroutine(DisplayBlocksText(db));
+    }
+
+    private IEnumerator DisplayBlocksText(DialogBuilder db)
+    {
         dialogObject.SetActive(true);
         speakerTitleText.text = db.GetTitle();
         if (speakerTitleText.text.Length == 0) speakerTitleText.text = db.GetSpeaker();
-        descriptionText.text = db.NextChunk;
+        descriptionText.text = "";
+
+        string currChunk = db.NextChunk;
+        do
+        {
+            // Output chunk letter by letter
+            foreach (char c in currChunk)
+            {
+                descriptionText.text += c;
+                yield return new WaitForSeconds(0.01f);
+            }
+
+            // Have to wait until next chunk is requested
+            while (!Input.GetKeyDown(KeyCode.Space)) yield return null;
+
+            // Current chunk is requested
+            currChunk = db.NextChunk;
+        } while (currChunk != null);
+
+        speakerTitleText.text = "";
+        descriptionText.text = "";
+        dialogObject.SetActive(false);
     }
 }

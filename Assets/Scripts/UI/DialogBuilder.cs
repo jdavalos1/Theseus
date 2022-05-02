@@ -21,6 +21,13 @@ public class DialogBuilder
         }
     }
 
+    public int NumberOfChunks
+    {
+        get
+        {
+            return chunks.Count;
+        }
+    }
     /// <summary>
     /// Previous chunk in the dialog
     /// </summary>
