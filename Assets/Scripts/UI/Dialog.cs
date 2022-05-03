@@ -6,15 +6,10 @@ using System;
 public class Dialog 
 {
     /// <summary>
-    /// Speaker of the text. Can be blank if the speaker
-    /// is an item.
-    /// </summary>
-    public string Speaker;
-    /// <summary>
     /// Title of an item. Can be blank if the text is from
     /// an NPC.
     /// </summary>
-    public string Title;
+    public string SpeakerTitle;
     /// <summary>
     /// Description/ speech of the item/ NPC.
     /// </summary>

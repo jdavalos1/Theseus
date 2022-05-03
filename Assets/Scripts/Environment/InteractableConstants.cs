@@ -4,5 +4,6 @@ using UnityEngine;
 
 public static class InteractableConstants
 {
-    public static float MinDistanctShowAndInteract = 3f;
+    public static float MinDistanctShowAndInteract = 5f;
+    public static string InteractablesBaseFolder = "Interactables JSON/";
 }

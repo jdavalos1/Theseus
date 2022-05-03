@@ -10,7 +10,7 @@ using TMPro;
 public class Interactable : FieldItems 
 {
     [SerializeField]
-    private string ItemResourceLocation;
+    private string ItemName;
 
     // Update is called once per frame
     void Update()
@@ -20,12 +20,7 @@ public class Interactable : FieldItems
 
     private void HandleInteractionItem()
     {
-        // TODO
-        // Call the ui manager's show dialog functionality
-        // Have to make sure the player can't move otherwise they'll move
-        // while dialog is being displayed.
-
-        DialogBuilder db = new DialogBuilder("Interactables JSON/AchillesVase", 0);
+        DialogBuilder db = new DialogBuilder(InteractableConstants.InteractablesBaseFolder + ItemName);
         UIManager.SharedInstance.ShowDialog(db);
     }
 }
