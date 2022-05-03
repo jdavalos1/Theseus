@@ -36,6 +36,8 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator DisplayBlocksText(DialogBuilder db)
     {
+        Player player = FindObjectOfType<Player>();
+        player.CanMove = false;
         dialogObject.SetActive(true);
         speakerTitleText.text = db.GetTitle();
         if (speakerTitleText.text.Length == 0) speakerTitleText.text = db.GetSpeaker();
@@ -61,5 +63,6 @@ public class UIManager : MonoBehaviour
         speakerTitleText.text = "";
         descriptionText.text = "";
         dialogObject.SetActive(false);
+        player.CanMove = true;
     }
 }

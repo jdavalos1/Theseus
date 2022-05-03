@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public bool CanMove;
+
     [SerializeField]
     private Transform player;
     [SerializeField]
@@ -14,12 +16,16 @@ public class Player : MonoBehaviour
     void Start()
     {
         useableItems = new Dictionary<Useable, int>();
+        CanMove = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        HandleMovement();
+        if (CanMove)
+        {
+            HandleMovement();
+        }
     }
 
     void HandleMovement()
