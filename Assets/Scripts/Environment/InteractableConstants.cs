@@ -4,6 +4,7 @@ using UnityEngine;
 
 public static class InteractableConstants
 {
-    public static float MinDistanctShowAndInteract = 5f;
-    public static string InteractablesBaseFolder = "Interactables JSON/";
+    public static readonly float MinDistanctShowAndInteract = 5f;
+    public static readonly string InteractablesBaseFolder = "Interactables JSON/";
+    public static readonly string PickablesBaseFolder = "Pickables JSON/";
 }

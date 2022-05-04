@@ -9,7 +9,7 @@ public class Dialog
     /// Title of an item. Can be blank if the text is from
     /// an NPC.
     /// </summary>
-    public string SpeakerTitle;
+    public string Title;
     /// <summary>
     /// Description/ speech of the item/ NPC.
     /// </summary>

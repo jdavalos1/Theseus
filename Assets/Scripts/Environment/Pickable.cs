@@ -24,12 +24,14 @@ public class Pickable : FieldItems
     /// </summary>
     private void Interact()
     {
-        Debug.Log(pickType);
         player.parent.GetComponent<Player>().AddItems(FieldItemManager.SharedInstance.UseableLists[pickType]);
-
+    
         gameObject.SetActive(false);
+        DialogBuilder db = new DialogBuilder(InteractableConstants.PickablesBaseFolder + pickType.ToString());
 
+        UIManager.SharedInstance.ShowDialog(db);
         // TODO:
+        // Need to show some information of the item
         // Need to show inventory in some form of a UI.
     }
 }

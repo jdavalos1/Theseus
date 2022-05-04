@@ -22,7 +22,7 @@ public class FieldItemManager : MonoBehaviour
         if(SharedInstance == null) SharedInstance = this;
         // Prepare the viewable items on the screen
         _useables = new Dictionary<FieldItemType, Useable>();
-        TextAsset textAsset = Resources.Load<TextAsset>("Pickables JSON/Potion");
+        TextAsset textAsset = Resources.Load<TextAsset>("Pickables JSON/HealthPotion");
         Potion potion = JsonUtility.FromJson<Potion>(textAsset.text);
         _useables.Add(FieldItemType.HealthPotion, potion);
     }

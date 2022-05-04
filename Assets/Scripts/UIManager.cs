@@ -37,7 +37,7 @@ public class UIManager : MonoBehaviour
         Player player = FindObjectOfType<Player>();
         player.CanMove = false;
         dialogObject.SetActive(true);
-        speakerTitleText.text = db.GetTitleSpeaker();
+        speakerTitleText.text = db.GetTitle();
         descriptionText.text = "";
 
         string description = db.GetDescription();

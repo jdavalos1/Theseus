@@ -13,6 +13,6 @@ public class DialogBuilder
 
     }
 
-    public string GetTitleSpeaker() { return dialog.SpeakerTitle; }
+    public string GetTitle() { return dialog.Title; }
     public string GetDescription() { return dialog.Description; }
 }

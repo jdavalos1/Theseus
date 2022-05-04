@@ -18,6 +18,9 @@ public class Interactable : FieldItems
         ShowAndInteract(HandleInteractionItem);
     }
 
+    /// <summary>
+    /// Handle how interactions are done with the interactable item
+    /// </summary>
     private void HandleInteractionItem()
     {
         DialogBuilder db = new DialogBuilder(InteractableConstants.InteractablesBaseFolder + ItemName);

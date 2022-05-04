@@ -3,5 +3,6 @@ using System;
 [Serializable]
 public class Useable
 {
-    public string name;
+    public string Title;
+    public string Description;
 }
