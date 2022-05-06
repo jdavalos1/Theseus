@@ -1,0 +1,4 @@
+{
+	"Title": "Discobolus",
+	"Description": "Translates to “discus thrower” , is a greek sculpture figuring a youthful athlete throwing a discus. A discus is a heavy disk thrown by an athlete in ancient greek games or in modern field events."
+}
