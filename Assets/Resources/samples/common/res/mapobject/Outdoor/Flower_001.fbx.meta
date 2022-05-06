@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: a21beae7c4cbd194d980589b9c099cb4
+guid: 066640f6729b69f4fb4e90fa846cac64
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
-    materialName: 2
+    materialName: 0
     materialSearch: 1
     materialLocation: 0
   animations:
@@ -41,7 +41,7 @@ ModelImporter:
     sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
+    importCameras: 1
     importLights: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
