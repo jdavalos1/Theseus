@@ -18,7 +18,6 @@ public class FieldItemManager : MonoBehaviour
     {
         // TODO: Find out how to use reflection to create all objects 
         // from the folder and then add them to the useable lists
-
         if(SharedInstance == null) SharedInstance = this;
         // Prepare the viewable items on the screen
         _useables = new Dictionary<FieldItemType, Useable>();

@@ -645,6 +645,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 734489374, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 07e4e5c409e18294fa31b58981ac8973, type: 3}
+    - target: {fileID: 734489374, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 734489374, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 734489374, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2600294342844077202, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
       propertyPath: m_Name
       value: In Game UIs
@@ -731,6 +747,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2600294342844077206, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294343746182914, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707274418307134192, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

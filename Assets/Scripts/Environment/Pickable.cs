@@ -31,7 +31,6 @@ public class Pickable : FieldItems
 
         UIManager.SharedInstance.ShowDialog(db);
         // TODO:
-        // Need to show some information of the item
         // Need to show inventory in some form of a UI.
     }
 }

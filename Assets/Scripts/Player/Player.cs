@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float speed;
 
+    public float health;
+
+    private Inventory inventory;
     private Dictionary<Useable, int> useableItems;
     // Start is called before the first frame update
     void Start()
@@ -38,9 +41,17 @@ public class Player : MonoBehaviour
         player.transform.position += speed * Time.deltaTime * move;
     }
 
+    public void HandleItemUse(KeyCode key)
+    {
+
+    }
+
+    /// <summary>
+    /// Add the item whenever the item is pressed
+    /// </summary>
+    /// <param name="useable"></param>
     public void AddItems(Useable useable)
     {
-        if (useableItems.ContainsKey(useable)) useableItems[useable]++;
-        else useableItems.Add(useable, 1);
+        inventory.AddItemToInventory(useable, 1);
     }
 }
