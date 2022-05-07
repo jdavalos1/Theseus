@@ -24,6 +24,7 @@ public class Interactable : FieldItems
     private void HandleInteractionItem()
     {
         DialogBuilder db = new DialogBuilder(InteractableConstants.InteractablesBaseFolder + ItemName);
+        FindObjectOfType<Player>().AddJournalEntry(db.Dialog);
         UIManager.SharedInstance.ShowDialog(db);
     }
 }

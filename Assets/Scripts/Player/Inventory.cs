@@ -18,12 +18,23 @@ public class Inventory
         get { return currentlyActive; }
     }
 
-    public void UseActive(Player p, int activePressed)
+    /// <summary>
+    /// Active being used on the player
+    /// </summary>
+    /// <param name="p"></param>
+    /// <param name="u"></param>
+    public void UpdateActiveList(Useable u)
     {
         // TODO:
         // Figure out how the active items will be used on the player
         // Do it in the individual items active
         // They should only be able to use it based on the number on hand
+        itemsOnHand[u]--;
+        if (itemsOnHand[u] <= 0)
+        {
+            itemsOnHand.Remove(u);
+            currentlyActive.Remove(u);
+        }
     }
 
     /// <summary>
