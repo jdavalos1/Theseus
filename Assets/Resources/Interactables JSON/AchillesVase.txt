@@ -1,4 +1,0 @@
-{
-	"Title": "Achilles and Penthesilea vase",
-	"Description": "A vase showing Achilles killing the warrior queen Penthesilea. Painted by Exekias, an ancient Greek vase painter and potter. 
-}

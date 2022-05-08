@@ -1,4 +1,0 @@
-{
-	"Title": "Pomegranate",
-	"Description": "Grants 1 extra life."
-}
