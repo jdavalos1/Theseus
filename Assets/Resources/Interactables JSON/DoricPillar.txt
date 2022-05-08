@@ -1,4 +1,0 @@
-{
-	"Title": "Doric Pillar",
-	"Description": "Has a very plain and straightforward design compared to the Ionic and Corinthian pillars. The Doric pillar is the heaviest among the three columns; therefore, it is associated with strength and masculinity. Ancient builders used them for the lowest level of multi-story buildings."
-}

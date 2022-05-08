@@ -14,11 +14,12 @@ public class Player : MonoBehaviour
     public float health;
 
     private Inventory inventory;
-    private Dictionary<Useable, int> useableItems;
+    private Journal journal;
     // Start is called before the first frame update
     void Start()
     {
-        useableItems = new Dictionary<Useable, int>();
+        inventory = new Inventory();
+        journal = new Journal();
         CanMove = true;
     }
 
@@ -41,9 +42,15 @@ public class Player : MonoBehaviour
         player.transform.position += speed * Time.deltaTime * move;
     }
 
-    public void HandleItemUse(KeyCode key)
-    {
 
+    /// <summary>
+    /// Handle the use of an active item in the combat menu
+    /// </summary>
+    /// <param name="u">The useable item to activate</param>
+    public void HandleItemUse(Useable u)
+    {
+        u.UseItem(this);
+        inventory.UpdateActiveList(u);
     }
 
     /// <summary>
@@ -53,5 +60,14 @@ public class Player : MonoBehaviour
     public void AddItems(Useable useable)
     {
         inventory.AddItemToInventory(useable, 1);
+    }
+
+    /// <summary>
+    /// Add the journal entry to the journal
+    /// </summary>
+    /// <param name="d">Dialog that houses all info</param>
+    public void AddJournalEntry(Dialog d)
+    {
+        journal.AddJournalEntry(d);
     }
 }

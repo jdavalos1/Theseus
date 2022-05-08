@@ -1,4 +1,0 @@
-{
-	"Title": "Cloak",
-	"Description": "Grants speed"
-}

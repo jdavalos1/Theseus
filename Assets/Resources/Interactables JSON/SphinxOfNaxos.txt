@@ -1,4 +1,0 @@
-{
-	"Title": "Sphinx of Naxos",
-	"Description": "A marble statue of a Sphinx with a head of a woman, chest and wings of a prey bird, and a body of a lioness. It is considered as having ferocious strength and is considered as a guardian, flanking the entrances to temples."
-}
