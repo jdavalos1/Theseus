@@ -16,7 +16,7 @@ public class Journal
         journalItems.Add(new JournalItem(d.Title, d.Description));
     }
 
-    public List<JournalItem> RequestAllEntries()
+    public List<JournalItem> RetJournal()
     {
         return journalItems;
     }
