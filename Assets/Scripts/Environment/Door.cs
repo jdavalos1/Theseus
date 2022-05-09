@@ -12,6 +12,7 @@ public class Door : FieldItems
 
     private void StartQuiz()
     {
-        Debug.Log("Starting");
+        UIManager.SharedInstance.ShowDialog(new DialogBuilder("Door", "Do you wish to proceed?"));
+        GameManager.SharedInstance.StartQuiz();
     }
 }

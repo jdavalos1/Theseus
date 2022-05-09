@@ -2,27 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Quiz : MonoBehaviour
+public class Quiz 
 {
     private List<Question> questions;
 
-    // Start is called before the first frame update
-    void Start()
+    public Quiz(List<Question> _questions)
     {
-        questions = new List<Question>();
-        LoadQuestions();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    // TODO: Load all questions based on json files
-    private void LoadQuestions()
-    {
-
+        questions.AddRange(_questions);
     }
 
     public Question ReturnQuestion()
