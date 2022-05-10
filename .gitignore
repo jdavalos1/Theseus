@@ -79,3 +79,6 @@ Assets/Resources/Interactables JSON/Question Files/KourosTrivia.json.meta
 Assets/PrefabEnv/Section5_Mountain.prefab
 Assets/PrefabEnv/Section7_hall.prefab
 Assets/Scenes/In_progress.unity
+*.meta
+*.meta
+*.meta
