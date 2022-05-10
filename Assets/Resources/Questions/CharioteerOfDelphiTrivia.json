@@ -1,6 +1,10 @@
 {
 	"Question": "What garment does the Charioteer of Delphi possess?",
 	"Answer": "Xystis",
-	"False Answers": 
-["Zeuxis", "Praxiteles", "Polygnotus"
+	"AllAnswers": [
+		"Zeuxis",
+		"Praxiteles",
+		"Xystis",
+		"Polygnotus"
+	]
 }

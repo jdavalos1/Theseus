@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class Door : FieldItems
 {
+    private Quiz doorQuiz;
+
+    void Start()
+    {
+        doorQuiz = new Quiz();
+    }
     // Update is called once per frame
     void Update()
     {

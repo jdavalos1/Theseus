@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private List<Question> allQuestions;
-    private Quiz quiz;
+    private List<TriviaQuestion> allQuestions;
+    public Quiz CurrentQuiz;
     private bool quizStarted;
 
     public static GameManager SharedInstance;
@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         if (SharedInstance == null) SharedInstance = this;
-        allQuestions = new List<Question>();
+        allQuestions = new List<TriviaQuestion>();
         // TODO: Load all questions from JSON
     }
 
