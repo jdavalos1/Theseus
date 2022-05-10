@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class Cloak : Useable
+[Serializable]
+public class Cloak : Consumable
 {
-    private int SpeedBoost;
+    public int SpeedBoost;
 
     /// <summary>
     /// Boost character by x speed

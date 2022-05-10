@@ -11,26 +11,28 @@ public class FieldItemManager : MonoBehaviour
 {
     public static FieldItemManager SharedInstance;
 
-    private Dictionary<FieldItemType, Useable> _useables;
-    public Dictionary<FieldItemType, Useable> UseableLists { get { return _useables; } }
+    private Dictionary<FieldItemType, Consumable> _consumables;
+    public Dictionary<FieldItemType, Consumable> ConsumableList { get { return _consumables; } }
 
     // Start is called before the first frame update
     void Start()
     {
-        // TODO: change the dictionary to be string as key with name
-        // manually add all field items to the manager
-        // Create all scripts for the items
         if(SharedInstance == null) SharedInstance = this;
-        // Prepare the viewable items on the screen
-        _useables = new Dictionary<FieldItemType, Useable>();
-        TextAsset textAsset = Resources.Load<TextAsset>("Pickables JSON/Cloak");
-        Useable useable = JsonUtility.FromJson<Cloak>(textAsset.text);
-        _useables.Add(FieldItemType.Cloak, useable);
+        _consumables = new Dictionary<FieldItemType, Consumable>();
+        TextAsset textAsset;
+        dynamic consumable;
 
-        foreach(var fit in Enum.GetValues(typeof(FieldItemType)))
+
+        // Oh boy you're gunna love this:
+        // convert enum to a type of class and create the object based on
+        // json file
+        foreach (FieldItemType fit in Enum.GetValues(typeof(FieldItemType)))
         {
             textAsset = Resources.Load<TextAsset>(InteractableConstants.PickablesBaseFolder + fit.ToString());
+            consumable = JsonUtility.FromJson(textAsset.text, Type.GetType(fit.ToString()));
+            _consumables.Add(fit, (consumable as Consumable));
         }
+
     }
 
     /// <summary>

@@ -29,7 +29,7 @@ public class Quiz
     /// <param name="_questions"></param>
     public Quiz()
     {
-        numberRight = numberWrong = 0;
+/*        numberRight = numberWrong = 0;
 
         // TODO: Load up all questions from the questions folder
         allQuestions = new List<TriviaQuestion>();
@@ -42,7 +42,7 @@ public class Quiz
         // Get random question to start
         randomLocation = Random.Range(0, currentQuestions.Count);
         currentQuestion = currentQuestions[randomLocation];
-    }
+*/    }
 
     /// <summary>
     /// Verify the answer passed in

@@ -1,4 +1,5 @@
 {
 	"Title": "Cloak",
-	"Description": "Grants Theseus speed."
+	"Description": "Grants Theseus speed.",
+	"SpeedBoost": 5
 }

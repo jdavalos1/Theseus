@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
     /// Handle the use of an active item in the combat menu
     /// </summary>
     /// <param name="u">The useable item to activate</param>
-    public void HandleItemUse(Useable u)
+    public void HandleItemUse(Consumable u)
     {
         u.UseItem(this);
         inventory.UpdateActiveList(u);
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
     /// Add the item whenever the item is pressed
     /// </summary>
     /// <param name="useable"></param>
-    public void AddItems(Useable useable)
+    public void AddItems(Consumable useable)
     {
         inventory.AddItemToInventory(useable, 1);
     }

@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public abstract class Useable
+public abstract class Consumable
 {
     public string Title;
     public string Description;
