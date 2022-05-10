@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    private List<TriviaQuestion> allQuestions;
     public Quiz CurrentQuiz;
     private bool quizStarted;
 
@@ -13,8 +12,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         if (SharedInstance == null) SharedInstance = this;
-        allQuestions = new List<TriviaQuestion>();
-        // TODO: Load all questions from JSON
+        StartQuiz();
     }
 
     // Update is called once per frame
@@ -24,10 +22,7 @@ public class GameManager : MonoBehaviour
 
     public void StartQuiz()
     {
-        // At least 5 questions will be needed. 3 can be wrong/right 2 right/wrong
-        List<TriviaQuestion> quizQuestions = allQuestions.GetRange(Random.Range(0, allQuestions.Count - 5), 5);
-
-        CurrentQuiz = new Quiz();
+        if(CurrentQuiz == null) CurrentQuiz = new Quiz();
         Debug.Log("Starting the quiz");
     }
 }
