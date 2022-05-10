@@ -1,4 +1,0 @@
-{
-	"Title": "Charioteer of Delphi",
-	"Description": "One of the most important sculptures of ancient greece because it represents the passage from the Archaic conventions to the Classical ideals. It exemplifies the balance between geometric representation and idealized realism. The charioteer’s garment, called the xystis, is the typical chiton that all chariot drivers wore during the race."
-}

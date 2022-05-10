@@ -37,10 +37,10 @@ public class UIManager : MonoBehaviour
         Player player = FindObjectOfType<Player>();
         player.CanMove = false;
         dialogObject.SetActive(true);
-        speakerTitleText.text = db.GetTitle();
+        speakerTitleText.text = db.Dialog.Title;
         descriptionText.text = "";
 
-        string description = db.GetDescription();
+        string description = db.Dialog.Description;
         do
         {
             // Output letter by letter
