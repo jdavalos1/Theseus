@@ -8,6 +8,7 @@ using UnityEngine;
 /// </summary>
 public class Pickable : FieldItems 
 {
+    private string pickableName;
     /// <summary>
     /// Type of field item to add to the player's inventory
     /// </summary>

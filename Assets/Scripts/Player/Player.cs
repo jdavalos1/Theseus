@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Transform player;
     [SerializeField]
-    private float speed;
+    private float moveSpeed;
 
     public float health;
 
@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
         Vector3 move = new Vector3(horizontal, 0, vertical);
 
-        player.transform.position += speed * Time.deltaTime * move;
+        player.transform.position += moveSpeed * Time.deltaTime * move;
     }
 
 
@@ -69,5 +69,30 @@ public class Player : MonoBehaviour
     public void AddJournalEntry(Dialog d)
     {
         journal.AddJournalEntry(d);
+    }
+
+    /// <summary>
+    /// Used to speed character by speed
+    /// </summary>
+    /// <param name="speed"></param>
+    public void BoostCharacter(int speed)
+    {
+        StartCoroutine(SpeedBoost(speed));
+    }
+
+    private IEnumerator SpeedBoost(int speed)
+    {
+        float originalSpeed = moveSpeed;
+        moveSpeed = speed;
+        float timer = 0f;
+        
+        while(timer < PlayerConstants.PlayerSpeedDecayTime)
+        {
+            timer += Time.deltaTime;
+            moveSpeed = Mathf.Lerp(speed, originalSpeed, timer / PlayerConstants.PlayerSpeedDecayTime);
+            yield return null;
+        }
+
+        moveSpeed = originalSpeed;
     }
 }

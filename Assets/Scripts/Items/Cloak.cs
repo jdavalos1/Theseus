@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Cloak : Useable
+{
+    private int SpeedBoost;
+
+    /// <summary>
+    /// Boost character by x speed
+    /// </summary>
+    /// <param name="p">Player to speed</param>
+    public override void UseItem(Player p)
+    {
+        p.BoostCharacter(SpeedBoost);
+    }
+}

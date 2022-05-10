@@ -2,6 +2,7 @@ using System.Collections;
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 /// <summary>
 /// Handles the different items on the field at run time
@@ -16,14 +17,20 @@ public class FieldItemManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // TODO: Find out how to use reflection to create all objects 
-        // from the folder and then add them to the useable lists
+        // TODO: change the dictionary to be string as key with name
+        // manually add all field items to the manager
+        // Create all scripts for the items
         if(SharedInstance == null) SharedInstance = this;
         // Prepare the viewable items on the screen
         _useables = new Dictionary<FieldItemType, Useable>();
-        TextAsset textAsset = Resources.Load<TextAsset>("Pickables JSON/HealthPotion");
-        Potion potion = JsonUtility.FromJson<Potion>(textAsset.text);
-        _useables.Add(FieldItemType.HealthPotion, potion);
+        TextAsset textAsset = Resources.Load<TextAsset>("Pickables JSON/Cloak");
+        Useable useable = JsonUtility.FromJson<Cloak>(textAsset.text);
+        _useables.Add(FieldItemType.Cloak, useable);
+
+        foreach(var fit in Enum.GetValues(typeof(FieldItemType)))
+        {
+            textAsset = Resources.Load<TextAsset>(InteractableConstants.PickablesBaseFolder + fit.ToString());
+        }
     }
 
     /// <summary>
@@ -31,6 +38,10 @@ public class FieldItemManager : MonoBehaviour
     /// </summary>
     public enum FieldItemType
     {
-        HealthPotion,
+        Cloak,
+        Pomegranate,
+        Scroll,
+        Shield,
+        TheseusSword
     }
 }
