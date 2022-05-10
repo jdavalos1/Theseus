@@ -25,9 +25,9 @@ public class GameManager : MonoBehaviour
     public void StartQuiz()
     {
         // At least 5 questions will be needed. 3 can be wrong/right 2 right/wrong
-        //List<Question> quizQuestions = allQuestions.GetRange(Random.Range(0, allQuestions.Count - 5), 5);
+        List<TriviaQuestion> quizQuestions = allQuestions.GetRange(Random.Range(0, allQuestions.Count - 5), 5);
 
-        //quiz = new Quiz(quizQuestions);
+        CurrentQuiz = new Quiz();
         Debug.Log("Starting the quiz");
     }
 }

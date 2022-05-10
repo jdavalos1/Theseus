@@ -29,10 +29,16 @@ public class Quiz
     /// <param name="_questions"></param>
     public Quiz()
     {
-/*        numberRight = numberWrong = 0;
+        numberRight = numberWrong = 0;
 
         // TODO: Load up all questions from the questions folder
         allQuestions = new List<TriviaQuestion>();
+        TextAsset[] tas = Resources.LoadAll<TextAsset>(QuizConstants.QuestionsBaseFolder);
+
+        foreach(TextAsset ta in tas)
+        {
+            allQuestions.Add(JsonUtility.FromJson<TriviaQuestion>(ta.text));
+        }
 
         // Get Random range in all questions
         int randomLocation = Random.Range(0, allQuestions.Count - QuizConstants.NumQRightThreshhold);
@@ -42,7 +48,9 @@ public class Quiz
         // Get random question to start
         randomLocation = Random.Range(0, currentQuestions.Count);
         currentQuestion = currentQuestions[randomLocation];
-*/    }
+
+        Debug.Log(currentQuestion.Question);
+    }
 
     /// <summary>
     /// Verify the answer passed in

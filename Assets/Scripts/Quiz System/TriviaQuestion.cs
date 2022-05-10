@@ -10,22 +10,19 @@ public class TriviaQuestion
     /// <summary>
     /// Question itself
     /// </summary>
-    private string Question;
+    public string Question;
 
     /// <summary>
     /// Right answer to the question
     /// </summary>
-    private string Answer;
+    public string Answer;
 
     /// <summary>
     /// All potential answers in the game
     /// </summary>
-    private List<string> AllAnswers;
+    public string[] AllAnswers;
 
-    public string QuestionText { get { return Question; } }
-    public List<string> PotentialAnswers { get { return AllAnswers; } }
-
-    public TriviaQuestion(string _question, List<string> _allAnswers, string answer)
+    public TriviaQuestion(string _question, string[] _allAnswers, string answer)
     {
         Question = _question;
         AllAnswers = _allAnswers;
