@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -484,6 +485,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Minotaur_Walking_sequence_13: -6304290160959511447
+      Minotaur_Walking_sequence_15: 8286485199081670210
+      Minotaur_Walking_sequence_3: -2990033994935344250
+      Minotaur_Walking_sequence_11: 9219363262784636234
+      Minotaur_Walking_sequence_2: 3076462599916907091
+      Minotaur_Walking_sequence_4: -2754152080199041621
+      Minotaur_Walking_sequence_5: 5860027541544594071
+      Minotaur_Walking_sequence_6: -4663988739278796589
+      Minotaur_Walking_sequence_12: 3949525025882635019
+      Minotaur_Walking_sequence_7: -1585038799086190342
+      Minotaur_Walking_sequence_14: -4705213213667358568
+      Minotaur_Walking_sequence_9: -7873441718405874932
+      Minotaur_Walking_sequence_0: 1915995829581520960
+      Minotaur_Walking_sequence_10: 2856089992346167715
+      Minotaur_Walking_sequence_1: -4108072805939703007
+      Minotaur_Walking_sequence_8: 1532046915557410706
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
