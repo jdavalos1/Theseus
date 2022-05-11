@@ -31,7 +31,6 @@ public class Quiz
     {
         numberRight = numberWrong = 0;
 
-        // TODO: Load up all questions from the questions folder
         allQuestions = new List<TriviaQuestion>();
         TextAsset[] tas = Resources.LoadAll<TextAsset>(QuizConstants.QuestionsBaseFolder);
 
@@ -66,6 +65,7 @@ public class Quiz
             if (QuizConstants.NumQRightThreshhold >= numberRight)
             {
                 Debug.Log("We did it");
+                GameManager.SharedInstance.PassedQuiz();
             }
             else
             {
@@ -78,6 +78,7 @@ public class Quiz
             if(QuizConstants.NumQWrongThreshhold >= numberWrong)
             {
                 Debug.Log("Oh oh");
+                GameManager.SharedInstance.FailedQuiz();
             }
             else
             {
