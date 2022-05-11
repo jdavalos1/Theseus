@@ -5,8 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private Player player;
-    public Quiz CurrentQuiz;
-    private bool quizStarted;
+    public Door currentDoor;
+    
 
     public static GameManager SharedInstance;
     // Start is called before the first frame update
@@ -16,16 +16,16 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<Player>();
     }
 
-    public void StartQuiz()
+    public void StartQuiz(Door d)
     {
-        if(CurrentQuiz == null) CurrentQuiz = new Quiz();
+        if (currentDoor == null) currentDoor = d;
         player.CanMove = false;
-        Debug.Log("Starting the quiz");
+        currentDoor.ContinueToNextSection();
     }
 
     public void PassedQuiz()
     {
-        // TODO: show success text
+        // TODO: show success text, set door to null
     }
 
     // TODO: once the player has continued open the door

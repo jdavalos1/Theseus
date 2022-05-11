@@ -27,12 +27,12 @@ public class Quiz
     /// Start the quiz by loading all questions
     /// </summary>
     /// <param name="_questions"></param>
-    public Quiz()
+    public Quiz(string subFolder)
     {
         numberRight = numberWrong = 0;
 
         allQuestions = new List<TriviaQuestion>();
-        TextAsset[] tas = Resources.LoadAll<TextAsset>(QuizConstants.QuestionsBaseFolder);
+        TextAsset[] tas = Resources.LoadAll<TextAsset>(QuizConstants.QuestionsBaseFolder + subFolder);
 
         foreach(TextAsset ta in tas)
         {
@@ -48,7 +48,6 @@ public class Quiz
         randomLocation = Random.Range(0, currentQuestions.Count);
         currentQuestion = currentQuestions[randomLocation];
 
-        Debug.Log(currentQuestion.Question);
     }
 
     /// <summary>

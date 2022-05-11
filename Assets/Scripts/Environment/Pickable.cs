@@ -26,7 +26,7 @@ public class Pickable : FieldItems
     private void Interact()
     {
         player.parent.GetComponent<Player>().AddItems(FieldItemManager.SharedInstance.ConsumableList[pickType]);
-    
+
         gameObject.SetActive(false);
         DialogBuilder db = new DialogBuilder(InteractableConstants.PickablesBaseFolder + pickType.ToString());
 
