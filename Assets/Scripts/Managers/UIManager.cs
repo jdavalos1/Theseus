@@ -47,8 +47,6 @@ public class UIManager : MonoBehaviour
 
         while(i < description.Length)
         {
-            descriptionText.text = "";
-
             while (!descriptionText.isTextTruncated && i < description.Length)
             {
                 descriptionText.text += description[i];
@@ -62,10 +60,7 @@ public class UIManager : MonoBehaviour
             descriptionText.ForceMeshUpdate();
         }
 
-        speakerTitleText.text = "";
-        descriptionText.text = "";
         dialogObject.SetActive(false);
         player.CanMove = true;
-        descriptionText.pageToDisplay = 1;
     }
 }

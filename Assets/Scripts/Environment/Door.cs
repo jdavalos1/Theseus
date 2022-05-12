@@ -96,5 +96,6 @@ public class Door : FieldItems
             yield return null;
         }
         p.CanMove = true;
+        transform.gameObject.SetActive(false);
     }
 }
