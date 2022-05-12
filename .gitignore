@@ -58,3 +58,99 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Materials/map/Map_section1_The_tomb/mat.mat.meta
+Assets/Materials/map/Map_section1_The_tomb/mesh_0.asset.meta
+Assets/Materials/map/Map_section1_The_tomb/mesh_1.asset.meta
+Assets/Materials/map/Map_section1_The_tomb/mesh_2.asset.meta
+Assets/Materials/map/Map_section1_The_tomb/mesh_3.asset.meta
+Assets/Materials/map/Map_section1_The_tomb/tex.png.meta
+Assets/Materials/map/Section8_exit/mat.mat.meta
+Assets/Materials/map/Section8_exit/mesh_0.asset.meta
+Assets/Materials/map/Section8_exit/mesh_1.asset.meta
+Assets/Materials/map/Section8_exit/mesh_2.asset.meta
+Assets/Materials/map/Section8_exit/mesh_3.asset.meta
+Assets/Materials/map/Section8_exit/tex.png.meta
+Assets/Materials/map/Section_2_Path_assets/mat.mat.meta
+Assets/Materials/map/Section_2_Path_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_2_Path_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_2_Path_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_2_Path_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_2_Path_assets/tex.png.meta
+Assets/Materials/map/Section_3_grassy_assets/mat.mat.meta
+Assets/Materials/map/Section_3_grassy_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_3_grassy_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_3_grassy_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_3_grassy_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_3_grassy_assets/tex.png.meta
+Assets/Materials/map/Section_4_field_assets/mat.mat.meta
+Assets/Materials/map/Section_4_field_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_4_field_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_4_field_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_4_field_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_4_field_assets/tex.png.meta
+Assets/Materials/map/Section_5_Mountain_assets/mat.mat.meta
+Assets/Materials/map/Section_5_Mountain_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_5_Mountain_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_5_Mountain_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_5_Mountain_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_5_Mountain_assets/tex.png.meta
+Assets/Materials/map/Section_6_marble_assets/mat.mat.meta
+Assets/Materials/map/Section_6_marble_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_6_marble_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_6_marble_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_6_marble_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_6_marble_assets/tex.png.meta
+Assets/Materials/map/Section_7_Hall_assets/mat.mat.meta
+Assets/Materials/map/Section_7_Hall_assets/mesh_0.asset.meta
+Assets/Materials/map/Section_7_Hall_assets/mesh_1.asset.meta
+Assets/Materials/map/Section_7_Hall_assets/mesh_2.asset.meta
+Assets/Materials/map/Section_7_Hall_assets/mesh_3.asset.meta
+Assets/Materials/map/Section_7_Hall_assets/tex.png.meta
+Assets/Materials/R (2).jpg.meta
+Assets/Materials/SkyboxObject.shader.meta
+Assets/Materials/SkyboxSphare.shader.meta
+Assets/Materials/VertexColor.shader.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section1_Tomb.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section2_Path.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section3_grassyplace 1.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section4_GrassField.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section5_Mountain 1.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section6_marble.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section7_hall.prefab.meta
+Assets/Prefabs/Enviroment/Enviroment Prefabs/Section8_entrance.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section1_Tomb.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section2_Path.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section3_grassyplace 1.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section4_GrassField.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section6_marble.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section7_hall.prefab.meta
+Assets/Prefabs/Enviroment/OldPrefabs/Section8_entrance.prefab.meta
+Assets/Resources/Interactables JSON/Question Files.meta
+Assets/Resources/Interactables JSON/Question Files/AchillesAndPenthesileaVaseTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/AphroditeOfKnidosTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/CalfBearerTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/CharioteerOfDelphiTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/CorinthianPillarTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/DiscobolusTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/DoricPillarTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/DoryphorosTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/IonicPillarTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/KourosTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/LeonidasSculptureTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/PeplosKoreTrivia.json.meta
+Assets/Resources/Interactables JSON/Question Files/SphinxOfNaxosTrivia.json.meta
+Assets/Resources/Questions.meta
+Assets/Resources/Questions/AchillesAndPenthesileaVaseTrivia.json.meta
+Assets/Resources/Questions/AphroditeOfKnidosTrivia.json.meta
+Assets/Resources/Questions/CalfBearerTrivia.json.meta
+Assets/Resources/Questions/CharioteerOfDelphiTrivia.json.meta
+Assets/Resources/Questions/CorinthianPillarTrivia.json.meta
+Assets/Resources/Questions/DiscobolusTrivia.json.meta
+Assets/Resources/Questions/DoricPillarTrivia.json.meta
+Assets/Resources/Questions/DoryphorosTrivia.json.meta
+Assets/Resources/Questions/IonicPillarTrivia.json.meta
+Assets/Resources/Questions/KourosTrivia.json.meta
+Assets/Resources/Questions/LeonidasSculptureTrivia.json.meta
+Assets/Resources/Questions/PeplosKoreTrivia.json.meta
+Assets/Resources/Questions/SphinxOfNaxosTrivia.json.meta
+Assets/Scenes/Theseus.unity.meta
