@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
     {
         if (currentDoor == null) currentDoor = d;
         player.CanMove = false;
-        currentDoor.ContinueToNextSection();
     }
 
     public void PassedQuiz()
