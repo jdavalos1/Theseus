@@ -39,26 +39,33 @@ public class UIManager : MonoBehaviour
         dialogObject.SetActive(true);
         speakerTitleText.text = db.Dialog.Title;
         descriptionText.text = "";
+        descriptionText.pageToDisplay = 1;
 
         string description = db.Dialog.Description;
-        do
+
+        int i = 0;
+
+        while(i < description.Length)
         {
-            // Output letter by letter
-            foreach (char c in description)
+            descriptionText.text = "";
+
+            while (!descriptionText.isTextTruncated && i < description.Length)
             {
-                descriptionText.text += c;
+                descriptionText.text += description[i];
+                i++;
                 yield return new WaitForSeconds(0.01f);
             }
-            // Have to wait until next chunk is requested
-            while (!Input.GetKeyDown(KeyCode.Space)) yield return null;
 
-            // Current chunk is requested
-            descriptionText.pageToDisplay++;
-        } while (descriptionText.pageToDisplay < descriptionText.textInfo.pageCount);
+            while (!Input.GetKeyDown(KeyCode.Space)) yield return null;
+            yield return null;
+            descriptionText.text = "";
+            descriptionText.ForceMeshUpdate();
+        }
 
         speakerTitleText.text = "";
         descriptionText.text = "";
         dialogObject.SetActive(false);
         player.CanMove = true;
+        descriptionText.pageToDisplay = 1;
     }
 }

@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public void PassedQuiz()
     {
         // TODO: show success text, set door to null
+        
     }
 
     // TODO: once the player has continued open the door

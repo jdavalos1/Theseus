@@ -49,7 +49,7 @@ public class Door : FieldItems
             StartCoroutine(OpenDoor());
             return;
         }
-        UIManager.SharedInstance.ShowDialog(new DialogBuilder("Door", "Do you wish to proceed?"));
+        UIManager.SharedInstance.ShowDialog(new DialogBuilder("Door Dialogs/Start Door"));
         GameManager.SharedInstance.StartQuiz(this);
     }
 
