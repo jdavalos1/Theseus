@@ -31,9 +31,13 @@ public class UIManager : MonoBehaviour
         StartCoroutine(DisplayBlocksText(db));
     }
 
+    /// <summary>
+    /// Displays the text in blocks
+    /// </summary>
+    /// <param name="db"></param>
+    /// <returns></returns>
     private IEnumerator DisplayBlocksText(DialogBuilder db)
     {
-        // TODO: Need to push characters page by page.
         Player player = FindObjectOfType<Player>();
         player.CanMove = false;
         dialogObject.SetActive(true);

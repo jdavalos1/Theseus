@@ -9,6 +9,8 @@ public class Door : FieldItems
     private Coroutine currentRoutine;
 
     [SerializeField]
+    private string quizIntroDialog;
+    [SerializeField]
     private bool quizBeat;
 
     [SerializeField]
@@ -49,7 +51,7 @@ public class Door : FieldItems
             StartCoroutine(OpenDoor());
             return;
         }
-        UIManager.SharedInstance.ShowDialog(new DialogBuilder("Door Dialogs/Start Door"));
+        UIManager.SharedInstance.ShowDialog(new DialogBuilder(QuizConstants.DialogBaseFolder + quizIntroDialog));
         GameManager.SharedInstance.StartQuiz(this);
     }
 

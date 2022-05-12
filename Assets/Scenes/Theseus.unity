@@ -155,6 +155,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4634599112546802746, guid: 67c2b7afe8fda7147b3818ea3e52f07c, type: 3}
+      propertyPath: quizIntroDialog
+      value: First Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4634599112546802746, guid: 67c2b7afe8fda7147b3818ea3e52f07c, type: 3}
       propertyPath: movementAmount.z
       value: 7
       objectReference: {fileID: 0}

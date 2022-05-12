@@ -26,7 +26,7 @@ public class Quiz
     /// <summary>
     /// Start the quiz by loading all questions
     /// </summary>
-    /// <param name="_questions"></param>
+    /// <param name="subFolder">Folder to read the questions from</param>
     public Quiz(string subFolder)
     {
         numberRight = numberWrong = 0;
@@ -63,7 +63,6 @@ public class Quiz
             numberRight++;
             if (QuizConstants.NumQRightThreshhold >= numberRight)
             {
-                Debug.Log("We did it");
                 GameManager.SharedInstance.PassedQuiz();
             }
             else
@@ -76,7 +75,6 @@ public class Quiz
             numberWrong++;
             if(QuizConstants.NumQWrongThreshhold >= numberWrong)
             {
-                Debug.Log("Oh oh");
                 GameManager.SharedInstance.FailedQuiz();
             }
             else
