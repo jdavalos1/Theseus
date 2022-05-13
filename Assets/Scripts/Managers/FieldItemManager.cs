@@ -17,7 +17,9 @@ public class FieldItemManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(SharedInstance == null) SharedInstance = this;
+        if (SharedInstance != null) return;
+
+        SharedInstance = this;
         _consumables = new Dictionary<FieldItemType, Consumable>();
         TextAsset textAsset;
         dynamic consumable;
