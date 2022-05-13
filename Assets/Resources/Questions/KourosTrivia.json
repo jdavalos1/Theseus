@@ -1,6 +1,10 @@
 {
 	"Question": "What does Kouros mean in greek?",
-	"Answer": "Youth, boy, especially of noble rank.",
-	"False Answers": 
-["An old woman", "An aristocratic chariot", "Honor and sacrifices"]
+	"Answer": "Youth, boy, especially of noble rank",
+	"AllAnswers": [
+		"An old woman",
+		"An aristocratic chariot",
+		"Honor and sacrifices",
+		"Youth, boy, especially of noble rank"
+	]
 }

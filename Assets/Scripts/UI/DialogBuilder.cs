@@ -13,4 +13,11 @@ public class DialogBuilder
         TextAsset dialogJson = Resources.Load<TextAsset>(fileLocation);
         dialog = JsonUtility.FromJson<Dialog>(dialogJson.text);
     }
+
+    public DialogBuilder(string title, string description)
+    {
+        dialog = new Dialog();
+        dialog.Title = title;
+        dialog.Description = description;
+    }
 }

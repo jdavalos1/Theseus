@@ -1,6 +1,10 @@
 {
 	"Question": "The Corinthian Pillar's capital or top part consist of what designs?",
 	"Answer": "Carved leaves and flowers design",
-	"False Answers": 
-["Circular ornaments", "Scrolls and spiral designs", "Plain and straightforward blocks"]
+	"AllAnswers": [
+		"Circular ornaments",
+		"Scrolls and spiral designs",
+		"Carved leaves and flowers design",
+		"Plain and straightforward blocks"
+	]
 }
