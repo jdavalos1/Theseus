@@ -35009,7 +35009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   interactUI: {fileID: 0}
-  item: {fileID: 0}
+  item: {fileID: 4740197194685528672}
   pickType: 1
 --- !u!1 &5371386866922010013
 GameObject:

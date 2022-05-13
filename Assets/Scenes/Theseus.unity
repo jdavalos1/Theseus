@@ -406,6 +406,46 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2600294344280740052, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 54c8fd23437b69b48ba085b2ccd6d10a, type: 2}
+    - target: {fileID: 2600294344280740052, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_lineSpacing
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344280740052, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_characterSpacing
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344280740052, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 54c8fd23437b69b48ba085b2ccd6d10a, type: 2}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_lineSpacing
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_wordSpacing
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_overflowMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_characterSpacing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600294344412518680, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5147151324864266384, guid: 00c44fd3e3d4ed545ad2422e8d537612, type: 3}
       propertyPath: m_IsActive
       value: 0
