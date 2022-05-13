@@ -1,6 +1,9 @@
 {
 	"Question": "The Discobolus statue translates to?",
 	"Answer": "Discus thrower ",
-	"False Answers": 
-["Volute thrower", "Spear bearer", "Volute bearer"
+	"AllAnswers": [
+		"Volute thrower",
+		"Spear bearer",
+		"Discus thrower",
+		"Volute bearer"]
 }

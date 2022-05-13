@@ -23,7 +23,7 @@ public class FieldItems : MonoBehaviour
     /// <param name="interact"></param>
     protected void ShowAndInteract(Action interact)
     {
-        if (Vector3.Distance(player.position, item.position) <= InteractableConstants.MinDistanctShowAndInteract)
+        if (Vector3.Distance(player.position, item.position) <= InteractableConstants.MinDistanctShowAndInteract && FindObjectOfType<Player>().CanMove)
         {
             interactUI.enabled = true;
             if (Input.GetKeyDown(KeyCode.E)) interact();

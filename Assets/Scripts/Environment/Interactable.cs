@@ -12,6 +12,8 @@ public class Interactable : FieldItems
     [SerializeField]
     private string ItemName;
 
+    private DialogBuilder db;
+
     // Update is called once per frame
     void Update()
     {
@@ -23,7 +25,10 @@ public class Interactable : FieldItems
     /// </summary>
     private void HandleInteractionItem()
     {
-        DialogBuilder db = new DialogBuilder(InteractableConstants.InteractablesBaseFolder + ItemName);
+        if (db == null)
+        {
+            db = new DialogBuilder(InteractableConstants.InteractablesBaseFolder + ItemName);
+        }
         FindObjectOfType<Player>().AddJournalEntry(db.Dialog);
         UIManager.SharedInstance.ShowDialog(db);
     }

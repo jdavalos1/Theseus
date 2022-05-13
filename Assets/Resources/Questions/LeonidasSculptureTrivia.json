@@ -1,6 +1,9 @@
 {
 	"Question": "Who created the Leonidas Sculpture?",
 	"Answer": "Vasos Falireas",
-	"False Answers": 
-["Exekias", "Nikolaos Gyzis", "Polykleitos"
+	"AllAnswers": [
+		"Exekias",
+		"Nikolaos Gyzis",
+		"Vasos Falireas",
+		"Polykleitos"]
 }
