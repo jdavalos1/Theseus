@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
-
+using UnityEditor;
 /// <summary>
 /// Represents an item in game and handles what it does.
 /// </summary>
 public class FieldItems : MonoBehaviour
 {
     [SerializeField]
-    protected Transform player;
+    GameObject interactSprite;
     [SerializeField]
-    private TextMeshProUGUI interactUI;
+    protected Transform player;
     [SerializeField]
     private Transform item;
 
@@ -25,9 +25,9 @@ public class FieldItems : MonoBehaviour
     {
         if (Vector3.Distance(player.position, item.position) <= InteractableConstants.MinDistanctShowAndInteract && FindObjectOfType<Player>().CanMove)
         {
-            interactUI.enabled = true;
+            interactSprite.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E)) interact();
         }
-        else interactUI.enabled = false;
+        else interactSprite.SetActive(false);
     }
 }
