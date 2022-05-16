@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
     {
         if (CanMove)
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+            }
             HandleMovement();
         }
     }

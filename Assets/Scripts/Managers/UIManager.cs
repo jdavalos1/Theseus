@@ -67,4 +67,9 @@ public class UIManager : MonoBehaviour
         dialogObject.SetActive(false);
         player.CanMove = true;
     }
+
+    public void ShowMainMenu()
+    {
+        // TODO: Figure out how menu swapping will work (i.e. object holder? State machine?)
+    }
 }
