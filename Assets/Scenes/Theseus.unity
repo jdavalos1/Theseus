@@ -1103,6 +1103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Section7_hall
       objectReference: {fileID: 0}
+    - target: {fileID: 1538206277082060626, guid: c5f4f30bddcb6b346b66a5ded0600612, type: 3}
+      propertyPath: m_RootOrder
+      value: 144
+      objectReference: {fileID: 0}
     - target: {fileID: 4947857406849722720, guid: c5f4f30bddcb6b346b66a5ded0600612, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.04959046
