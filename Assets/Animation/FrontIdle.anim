@@ -8,7 +8,7 @@ AnimationClip:
   m_PrefabAsset: {fileID: 0}
   m_Name: FrontIdle
   serializedVersion: 6
-  m_Legacy: 1
+  m_Legacy: 0
   m_Compressed: 0
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
@@ -37,8 +37,19 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: -1550450825, guid: 2197d07b078542d4c9bce19f686ccf3c, type: 3}
+    - {fileID: 1988099221, guid: 2197d07b078542d4c9bce19f686ccf3c, type: 3}
+    - {fileID: 966715605, guid: 2197d07b078542d4c9bce19f686ccf3c, type: 3}
+    - {fileID: 737618799, guid: 2197d07b078542d4c9bce19f686ccf3c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

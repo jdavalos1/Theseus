@@ -213,6 +213,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!4 &188666090 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4751858520992060820, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+  m_PrefabInstance: {fileID: 1196763258}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &188666091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188666083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 961470157}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
 --- !u!1001 &226789305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1103,6 +1123,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804468285}
   m_CullTransparentMesh: 1
+--- !u!1 &961470157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4751858520235577276, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+  m_PrefabInstance: {fileID: 1196763258}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1171,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 25.296925
+  field of view: 69.569984
   orthographic: 0
   orthographic size: 5
   m_Depth: 1
@@ -1171,14 +1196,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1813584, y: -0, z: -0, w: 0.9834171}
-  m_LocalPosition: {x: -1001, y: 546, z: -2893}
+  m_LocalRotation: {x: 0.26140547, y: -0, z: -0, w: 0.9652291}
+  m_LocalPosition: {x: -973, y: 669, z: -2966}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 20.898, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 30.307, y: 0, z: 0}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,9 +1216,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7265e7d8932c52346b4b1b54cc158215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  cameraDistance: {x: 0, y: 0, z: 0}
-  cameraSpeed: 0
+  player: {fileID: 188666090}
+  cameraDistance: {x: 30, y: 30, z: 30}
+  cameraSpeed: 20
 --- !u!1 &1109958754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1293,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1196763262, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -826560245, guid: 49626806ef1f2304a95cfeee9f5f60ee, type: 3}
+    - target: {fileID: 1196763263, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336011514177303824, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+      propertyPath: speed
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2336011514177303824, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4751858520034801994, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 98
@@ -1306,7 +1347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520235577272, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 97
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520235577272, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1366,7 +1407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520992060821, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: speed
-      value: 150
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520992060821, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: health
@@ -1374,7 +1415,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520992060821, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: CanMove
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4751858520992060823, guid: b47b3231efed06b4cb158cc180db37d3, type: 3}
       propertyPath: m_Name
