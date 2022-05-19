@@ -2088,7 +2088,6 @@ Transform:
   - {fileID: 3087506486077647832}
   - {fileID: 3087506485507968048}
   - {fileID: 3087506485699788395}
-  - {fileID: 6723684087418173727}
   - {fileID: 3394811724463025728}
   - {fileID: 1538206277082060626}
   - {fileID: 5919443454958880980}
@@ -11917,100 +11916,6 @@ MonoBehaviour:
   objectType: 1
   terrainClusterNo: 0
   modelPath: assets/resources/samples/common/res/mapobject/Outdoor/Woodfence.fbx
---- !u!1 &1557058038632787599
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6723684087418173727}
-  - component: {fileID: 509464236822369981}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6723684087418173727
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557058038632787599}
-  m_LocalRotation: {x: -0.1178026, y: 0.37730518, z: 0.02259194, w: 0.9182881}
-  m_LocalPosition: {x: 115.70568, y: -21.273289, z: 77.70787}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 626063143138313700}
-  m_RootOrder: 142
-  m_LocalEulerAnglesHint: {x: -13.497, y: 45.004, z: -2.794}
---- !u!108 &509464236822369981
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557058038632787599}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 0.43320578, g: 0.5463206, b: 0.5566038, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &3087506484299445997
 GameObject:
   m_ObjectHideFlags: 0
@@ -13753,7 +13658,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f4caacaa241bf294a8cd9b9a32ab0b31, type: 3}
       propertyPath: m_RootOrder
-      value: 144
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f4caacaa241bf294a8cd9b9a32ab0b31, type: 3}
       propertyPath: m_LocalScale.x
@@ -14137,7 +14042,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e8c87c831a4838a45bf002201a01a6ff, type: 3}
       propertyPath: m_RootOrder
-      value: 143
+      value: 142
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e8c87c831a4838a45bf002201a01a6ff, type: 3}
       propertyPath: m_LocalScale.x
@@ -14456,7 +14361,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f85e5cc5a5bebff479f4b146501d831a, type: 3}
       propertyPath: m_RootOrder
-      value: 145
+      value: 144
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f85e5cc5a5bebff479f4b146501d831a, type: 3}
       propertyPath: m_LocalScale.x
