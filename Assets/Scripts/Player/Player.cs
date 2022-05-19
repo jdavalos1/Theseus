@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         inventory = new Inventory();
         journal = new Journal();
         CanMove = true;
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         Vector3 move = new Vector3(horizontal, 0, vertical);
 
         player.transform.position += speed * Time.deltaTime * move;
+
     }
 
 
