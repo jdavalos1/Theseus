@@ -1,13 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TestAnimScript : MonoBehaviour
 {
+    public Rigidbody rb;
+    public float speed = 3f;
+    public InputAction PlayerMov;
 
-    public float speed;
- 
     Animator anim;
+
+    Vector2 moveDirection = Vector2.zero;
+
+    private void OnEnable()
+    {
+
+        PlayerMov.Enable();
+    }
+    private void OnDisable()
+    {
+        PlayerMov.Disable();
+
+    }
 
     //Use this for initialization
     void Start()
@@ -15,14 +28,25 @@ public class TestAnimScript : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void OnMovement(InputValue value)
+    {
+        if (moveDirection.x != 0  ll movement.y != 0) {
+            anim.SetFloat("x", moveDirection.x);
+            anim.SetFloat("y", moveDirection.y);
+
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        var z = Input.GetAxis("Vertical") * speed;
-        var x = Input.GetAxis("Horizontal") * speed;
+        // var z = Input.GetAxis("Vertical") * speed;
+        //var x = Input.GetAxis("Horizontal") * speed;
 
-        transform.Translate(x, 0, z);
-        transform.Rotate(0, 0, 0);
+        moveDirection = PlayerMov.ReadValue<Vector2>();
+
+
+       // transform.Translate(x, 0, z);
+     //  transform.Rotate(0, 0, 0);
 
         if (Input.GetKey(KeyCode.W))
         {
@@ -53,5 +77,8 @@ public class TestAnimScript : MonoBehaviour
             anim.SetBool("IsIdle", true);
         }
     }
-
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
     }
+}

@@ -42,7 +42,7 @@ public partial class @MovPlayer : IInputActionCollection2, IDisposable
                     ""name"": ""Leftandright"",
                     ""id"": ""007f38e1-8f92-406f-b909-06432038c098"",
                     ""path"": ""1DAxis"",
-                    ""interactions"": """",
+                    ""interactions"": ""Press"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Move"",
@@ -107,7 +107,19 @@ public partial class @MovPlayer : IInputActionCollection2, IDisposable
             ]
         }
     ],
-    ""controlSchemes"": []
+    ""controlSchemes"": [
+        {
+            ""name"": ""Keyboard"",
+            ""bindingGroup"": ""Keyboard"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
 }");
         // Land
         m_Land = asset.FindActionMap("Land", throwIfNotFound: true);
@@ -200,6 +212,15 @@ public partial class @MovPlayer : IInputActionCollection2, IDisposable
         }
     }
     public LandActions @Land => new LandActions(this);
+    private int m_KeyboardSchemeIndex = -1;
+    public InputControlScheme KeyboardScheme
+    {
+        get
+        {
+            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
+            return asset.controlSchemes[m_KeyboardSchemeIndex];
+        }
+    }
     public interface ILandActions
     {
         void OnMove(InputAction.CallbackContext context);
