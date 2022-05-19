@@ -1107,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 144
       objectReference: {fileID: 0}
+    - target: {fileID: 3394811724463025728, guid: c5f4f30bddcb6b346b66a5ded0600612, type: 3}
+      propertyPath: m_RootOrder
+      value: 143
+      objectReference: {fileID: 0}
     - target: {fileID: 4947857406849722720, guid: c5f4f30bddcb6b346b66a5ded0600612, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.04959046
@@ -1295,6 +1299,63 @@ PrefabInstance:
       objectReference: {fileID: 2135978136}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66129741112bbe141b42cbc719dfe98d, type: 3}
+--- !u!1001 &5038877752955514702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954484384474318326, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987487791733902839, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
+      propertyPath: m_Name
+      value: 'Head Of A Woman '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bbc388a3fb34f3e4a8399ed47db117e3, type: 3}
 --- !u!1001 &5696035860474235534
 PrefabInstance:
   m_ObjectHideFlags: 0
